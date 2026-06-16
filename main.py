@@ -49,5 +49,3 @@ print(
 )
 
 print("\nThank you, your total is: $" + str(total))
-
-print("terima kasih")
