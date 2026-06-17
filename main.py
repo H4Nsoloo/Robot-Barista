@@ -5,11 +5,12 @@ name = input("What is your name?\n" + "> ")
 # Ban Ben
 if name == "Ben" or name == "Petricia":
     evil_status = input("Are you evil " + name + "? (yes/no)\n" + "> ")
-    if evil_status == "yes":
+    good_deeds = int(input("How many good deeds have you done today?\n" + "> "))
+    if evil_status == "yes" and good_deeds < 4:
         print("You're not welcome here, Get Out!")
         exit()
     else:
-        print("Oh, you're not evil Ben. Welcome!")
+        print("Oh, you're not evil " + name + ". Welcome!")
 else:
     print("\nHello " + name + ", thank you so much for coming in today.\n")
 
