@@ -3,8 +3,8 @@ print("Hello, Welcome to Han Coffee!")
 name = input("What is your name?\n" + "> ")
 
 # Ban Ben
-if name == "Ben":
-    evil_status = input("Are you evil Ben? (yes/no)\n" + "> ")
+if name == "Ben" or name == "Petricia":
+    evil_status = input("Are you evil " + name + "? (yes/no)\n" + "> ")
     if evil_status == "yes":
         print("You're not welcome here, Get Out!")
         exit()
@@ -49,5 +49,3 @@ print(
 )
 
 print("\nThank you, your total is: $" + str(total))
-
-print("entah la")
