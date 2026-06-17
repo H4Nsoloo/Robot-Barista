@@ -49,3 +49,5 @@ print(
 )
 
 print("\nThank you, your total is: $" + str(total))
+
+print("entah la")
