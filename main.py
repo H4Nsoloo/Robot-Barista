@@ -2,13 +2,16 @@
 print("Hello, Welcome to Han Coffee!")
 name = input("What is your name?\n" + "> ")
 
-# Ban Ben
+# Ban Ben & Petricia then ask for evil status
 if name == "Ben" or name == "Petricia":
     evil_status = input("Are you evil " + name + "? (yes/no)\n" + "> ")
-    good_deeds = int(input("How many good deeds have you done today?\n" + "> "))
-    if evil_status == "yes" and good_deeds < 4:
-        print("You're not welcome here, Get Out!")
-        exit()
+    if evil_status == "yes":
+        good_deeds = int(input("How many good deeds have you done today?\n" + "> "))
+        if good_deeds < 4:
+            print("You're not welcome here, Get Out!")
+            exit()
+        else:
+            print("Oh, you're not evil " + name + ". Welcome!")
     else:
         print("Oh, you're not evil " + name + ". Welcome!")
 else:
