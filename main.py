@@ -7,11 +7,11 @@ if name == "Ben" or name == "Petricia":
     evil_status = input("Are you evil " + name + "? (yes/no)\n" + "> ")
     if evil_status == "yes":
         good_deeds = int(input("How many good deeds have you done today?\n" + "> "))
-        if good_deeds < 4:
-            print("You're not welcome here, Get Out!")
-            exit()
+        if good_deeds > 4:
+            print("Your good deeds saved you. Welcome!!")
         else:
-            print("Oh, you're not evil " + name + ". Welcome!")
+            print("You're not welcome here, Get Out!!")
+            exit()
     else:
         print("Oh, you're not evil " + name + ". Welcome!")
 else:
@@ -53,3 +53,5 @@ print(
 )
 
 print("\nThank you, your total is: $" + str(total))
+
+print("test")
