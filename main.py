@@ -12,7 +12,7 @@ if name == "Ben" or name == "Petricia":
         else:
             print("You're not welcome here, Get Out!!")
             exit()
-    else:
+    if evil_status == "no":
         print("Oh, you're not evil " + name + ". Welcome!")
 else:
     print("\nHello " + name + ", thank you so much for coming in today.\n")
